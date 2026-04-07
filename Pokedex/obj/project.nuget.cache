@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GsXPWnSw+j0=",
+  "dgSpecHash": "Nogn6guX4VU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ad1027142\\source\\repos\\CIS_150\\Pokedex\\Pokedex\\Pokedex.csproj",
+  "projectFilePath": "C:\\Users\\ad1027142\\source\\repos\\Pokedex\\Pokedex\\Pokedex.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ad1027142\\.nuget\\packages\\googlegson\\2.13.0.1\\googlegson.2.13.0.1.nupkg.sha512",
     "C:\\Users\\ad1027142\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.8\\microsoft.extensions.configuration.9.0.8.nupkg.sha512",

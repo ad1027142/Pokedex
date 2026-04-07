@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ad1027142\\source\\repos\\CIS_150\\Pokedex\\",
+  "WorkspaceRootPath": "C:\\Users\\ad1027142\\source\\repos\\Pokedex\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3239BD97-C155-436C-9727-E219D32D44C9}|Pokedex\\Pokedex.csproj|c:\\users\\ad1027142\\source\\repos\\cis_150\\pokedex\\pokedex\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{3239BD97-C155-436C-9727-E219D32D44C9}|Pokedex\\Pokedex.csproj|c:\\users\\ad1027142\\source\\repos\\pokedex\\pokedex\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3239BD97-C155-436C-9727-E219D32D44C9}|Pokedex\\Pokedex.csproj|solutionrelative:pokedex\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\ad1027142\\source\\repos\\CIS_150\\Pokedex\\Pokedex\\MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\ad1027142\\source\\repos\\Pokedex\\Pokedex\\MainPage.xaml",
               "RelativeDocumentMoniker": "Pokedex\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\ad1027142\\source\\repos\\CIS_150\\Pokedex\\Pokedex\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\ad1027142\\source\\repos\\Pokedex\\Pokedex\\MainPage.xaml",
               "RelativeToolTip": "Pokedex\\MainPage.xaml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-04-07T13:48:04.206Z",
               "EditorCaption": ""
