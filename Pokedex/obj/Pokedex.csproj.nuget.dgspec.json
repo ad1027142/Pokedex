@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ad1027142\\source\\repos\\Pokedex\\Pokedex\\Pokedex.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\ad1027142\\Pokedex\\Pokedex\\Pokedex.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ad1027142\\source\\repos\\Pokedex\\Pokedex\\Pokedex.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\ad1027142\\Pokedex\\Pokedex\\Pokedex.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ad1027142\\source\\repos\\Pokedex\\Pokedex\\Pokedex.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\ad1027142\\Pokedex\\Pokedex\\Pokedex.csproj",
         "projectName": "Pokedex",
-        "projectPath": "C:\\Users\\ad1027142\\source\\repos\\Pokedex\\Pokedex\\Pokedex.csproj",
-        "packagesPath": "C:\\Users\\ad1027142\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ad1027142\\source\\repos\\Pokedex\\Pokedex\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\ad1027142\\Pokedex\\Pokedex\\Pokedex.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\ad1027142\\Pokedex\\Pokedex\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ad1027142\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
