@@ -9,27 +9,11 @@
         Padding="12">
         
         <!-- Top row: Main content area with circle button (left), screen (center 40%), and D-pad (right) -->
-    <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
+        <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
           HorizontalOptions="Fill" 
           VerticalOptions="Fill"
           ColumnDefinitions="*,40*,*">
-
-      
-      <!-- Left side: Circle Button -->
-      <StackLayout Grid.Column="0" 
-                   HorizontalOptions="Center" 
-                   VerticalOptions="Center"
-                   Spacing="10"
-                   Padding="10">
-        <Button x:Name="CircleButton"
-                HeightRequest="80"
-                WidthRequest="80"
-                CornerRadius="40"
-                BackgroundColor="Blue"
-                Text="A" />
-      </StackLayout>
-
-      <!-- Center: Main Content (40% of screen) -->
+            <!-- Center: Main Content (40% of screen) -->
       <Grid Grid.Column="1" 
             HorizontalOptions="Fill" 
             VerticalOptions="Fill"
@@ -111,18 +95,20 @@
           Padding="10">
       
       <!-- Submit Button (Left) -->
-      <Button Grid.Column="0"
+            <Button Grid.Column="0"
               x:Name="Submit"
               HeightRequest="80"
               WidthRequest="80"
               CornerRadius="40"
-              BackgroundColor="#555555"/>
+              BackgroundColor="#555555"
+              Clicked="OnSubmitClicked"
+                    />
 
-      <!-- Entry (Center) -->
+            <!-- Entry (Center) -->
       <Entry Grid.Column="1"
              x:Name="InputEntry"
              Placeholder="Type ID/Name and press Enter"
-             Completed="OnEntryCompleted"
+             Completed="OnSubmitClicked"
              HorizontalOptions="Fill"
              VerticalOptions="Center"
              TextColor="White"

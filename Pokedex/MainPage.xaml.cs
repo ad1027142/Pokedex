@@ -10,13 +10,10 @@ public partial class MainPage : ContentPage
         InitializeComponent();
     }
 
-    void OnLocationClicked(object sender, EventArgs e)
+    async void OnSubmitClicked(object sender, EventArgs e)
     {
-        if (sender is Button btn)
-        {
-            // Replace with your navigation / logic for that map location
-            DisplayAlert("Location tapped", $"You tapped: {btn.Text}", "OK");
-        }
+        // Await the Task returned by PokeAPI, and pass the entry text (or empty string) as required.
+        await API.PokeAPI(InputEntry?.Text ?? string.Empty);
     }
 
     void OnEntryCompleted(object sender, EventArgs e)
