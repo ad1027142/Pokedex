@@ -3,48 +3,186 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Pokedex.MainPage">
 
-  <!-- Three rows: main content (fills), rectangle group (40%), entry (auto height) -->
-  <Grid RowDefinitions="*,40*,Auto"
+  <Grid RowDefinitions="*,Auto"
+        ColumnDefinitions="*,40*,*"
         BackgroundColor="#cc0000"
-        ColumnDefinitions="*"
-        Padding="12"
-        HorizontalOptions="Center" VerticalOptions="Center">
+        Padding="12">
+        
+        <!-- Top row: Main content area with circle button (left), screen (center 40%), and D-pad (right) -->
+    <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
+          HorizontalOptions="Fill" 
+          VerticalOptions="Fill"
+          ColumnDefinitions="*,40*,*">
 
-    <!-- Main content area -->
+      
+      <!-- Left side: Circle Button -->
+      <StackLayout Grid.Column="0" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"
+                   Spacing="10"
+                   Padding="10">
+        <Button x:Name="CircleButton"
+                HeightRequest="80"
+                WidthRequest="80"
+                CornerRadius="40"
+                BackgroundColor="Blue"
+                Text="A" />
+      </StackLayout>
 
-    <!-- Rectangle and Polygon grouped together -->
-    <Grid Grid.Row="1" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Fill">
-      <Rectangle RadiusX="4" RadiusY="4" Fill="LightGray"></Rectangle>
-      <Polygon Points="0,100 0,0 100,100"
-               Stroke="#cc0000"
-               Fill="#cc0000"
-               StrokeThickness="2"
-               HorizontalOptions="Start"
-               VerticalOptions="End"
-               WidthRequest="100"
-               HeightRequest="100" />
+      <!-- Center: Main Content (40% of screen) -->
+      <Grid Grid.Column="1" 
+            HorizontalOptions="Fill" 
+            VerticalOptions="Fill"
+            RowDefinitions="Auto,*"
+            ColumnDefinitions="*"
+            Padding="10">
+        
+        <!-- Top: Ellipses -->
+        <Grid Grid.Row="0"
+              HorizontalOptions="Start"
+              VerticalOptions="Start"
+              ColumnDefinitions="Auto,Auto,Auto,Auto"
+              RowDefinitions="Auto"
+              ColumnSpacing="10"
+              Padding="10">
+          
+          <!-- Big Ellipse -->
+          <Ellipse Grid.Column="0"
+                   Fill="CornflowerBlue"
+                   Stroke="white"
+                   StrokeThickness="5"
+                   WidthRequest="80"
+                   HeightRequest="80" />
+          
+          <!-- Small Ellipse 1 -->
+          <Ellipse Grid.Column="1"
+                   Fill="OrangeRed"
+                   Stroke="Black"
+                   StrokeThickness="2"
+                   WidthRequest="15"
+                   HeightRequest="15"
+                   VerticalOptions="Start" />
+          
+          <!-- Small Ellipse 2 -->
+          <Ellipse Grid.Column="2"
+                   Fill="Yellow"
+                   Stroke="Black"
+                   StrokeThickness="2"
+                   WidthRequest="15"
+                   HeightRequest="15"
+                   VerticalOptions="Start" />
+          
+          <!-- Small Ellipse 3 -->
+          <Ellipse Grid.Column="3"
+                   Fill="ForestGreen"
+                   Stroke="Black"
+                   StrokeThickness="2"
+                   WidthRequest="15"
+                   HeightRequest="15"
+                   VerticalOptions="Start" />
+        </Grid>
+        
+        <!-- Rectangle and Polygon grouped together -->
+        <Grid Grid.Row="1" HorizontalOptions="Fill" VerticalOptions="Fill">
+          <Rectangle RadiusX="4" RadiusY="4" Fill="LightGray"></Rectangle>
+          <Polygon Points="0,100 0,0 100,100"
+                   Stroke="#cc0000"
+                   Fill="#cc0000"
+                   StrokeThickness="2"
+                   HorizontalOptions="Start"
+                   VerticalOptions="End"
+                   WidthRequest="100"
+                   HeightRequest="100" />
+        </Grid>
+      </Grid>
+
+      <!-- Right side: Empty for balance -->
+      <StackLayout Grid.Column="2" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"
+                   Padding="10" />
     </Grid>
-    
-    <!-- Button and Entry -->
-    <StackLayout Grid.Row="2" Grid.Column="0" Spacing="10">
-      <Button x:Name="Submit"
+
+    <!-- Bottom row: Submit button (left), Entry (center), and D-Pad (right) -->
+    <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"
+          ColumnDefinitions="Auto,*,Auto"
+          HorizontalOptions="Fill"
+          VerticalOptions="Center"
+          Padding="10">
+      
+      <!-- Submit Button (Left) -->
+      <Button Grid.Column="0"
+              x:Name="Submit"
               HeightRequest="80"
               WidthRequest="80"
-              CornerRadius="100"/>
-       <Button x:Name="dleft"
-              HeightRequest="40"
-              WidthRequest="40"
-              BackgroundColor="DarkGray"/>
+              CornerRadius="40"
+              BackgroundColor="#555555"/>
 
-            <Entry Grid.Row="0"
+      <!-- Entry (Center) -->
+      <Entry Grid.Column="1"
              x:Name="InputEntry"
              Placeholder="Type ID/Name and press Enter"
              Completed="OnEntryCompleted"
              HorizontalOptions="Fill"
-             Margin="0,10,0,0" 
+             VerticalOptions="Center"
              TextColor="White"
              PlaceholderColor="White"/>
-             
-    </StackLayout>
+
+      <!-- D-Pad (Right) -->
+      <Grid Grid.Column="2"
+            RowDefinitions="Auto,Auto,Auto"
+            ColumnDefinitions="Auto,Auto,Auto">
+        
+        <!-- Up -->
+        <Button Grid.Row="0" Grid.Column="1"
+                HeightRequest="40"
+                WidthRequest="40"
+                CornerRadius="3"
+                BackgroundColor="#555555"
+                Text="↑" 
+                FontSize="Small"
+                x:Name="up"/>
+        
+        <!-- Left -->
+        <Button Grid.Row="1" Grid.Column="0"
+                HeightRequest="40"
+                WidthRequest="40"
+                CornerRadius="3"
+                BackgroundColor="#555555"
+                Text="←"
+                FontSize="Small"
+                x:Name="left"/>
+        
+        <!-- Center -->
+        <Button Grid.Row="1" Grid.Column="1"
+                HeightRequest="40"
+                WidthRequest="40"
+                CornerRadius="3"
+                BackgroundColor="#555555"
+                Text="●"
+                FontSize="Medium"
+                x:Name="cener"/>
+        
+        <!-- Right -->
+        <Button Grid.Row="1" Grid.Column="2"
+                HeightRequest="40"
+                WidthRequest="40"
+                CornerRadius="3"
+                BackgroundColor="#555555"
+                Text="→" 
+                FontSize="Small"
+                x:Name="rightg"/>
+        
+        <!-- Down -->
+        <Button Grid.Row="2" Grid.Column="1"
+                HeightRequest="40"
+                WidthRequest="40"
+                CornerRadius="3"
+                BackgroundColor="#555555"
+                Text="↓" 
+                FontSize="Small"
+                x:Name="bottm"/>
+      </Grid>
+    </Grid>
   </Grid>
 </ContentPage>
