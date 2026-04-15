@@ -9,5 +9,6 @@ namespace Pokedex
         public int Height { get; set; }
         public int Weight { get; set; }
         public string Types { get; set; } = string.Empty;
+        public string ImageUrl { get; set; } = string.Empty;
     }
 }

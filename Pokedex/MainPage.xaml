@@ -71,18 +71,19 @@
                     <Border StrokeShape="RoundRectangle 5" Stroke="#cc0000" Background="LightGray">
                         <Grid RowDefinitions="*,Auto,Auto" ColumnDefinitions="*,*,*">
                             
-                            <!-- Image at the top -->
+                            <!-- Image at the top (bound to ViewModel ImageUrl) -->
                             <Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
                                    x:Name="PokemonImage"
+                                   Source="{Binding ImageUrl}"
                                    Aspect="AspectFit"
+                                   HeightRequest="140"
                                    Margin="10"
                                    HorizontalOptions="Center"
-                                   VerticalOptions="Fill" />
+                                   VerticalOptions="Start" />
 
                             <!-- Row with 3 labels above the polygon -->
                             <Label Grid.Row="1" Grid.Column="0"
-                                   x:Name="Name"
-                                   Text="Name"
+                                   Text="{Binding Name}"
                                    FontSize="Medium"
                                    Padding="5"
                                    TextColor="Black"
@@ -90,8 +91,7 @@
                                    VerticalOptions="Center" />
                             
                             <Label Grid.Row="1" Grid.Column="1"
-                                   x:Name="Type"
-                                   Text="Type"
+                                   Text="{Binding Types}"
                                    FontSize="Medium"
                                    Padding="5"
                                    TextColor="Black"
@@ -99,8 +99,7 @@
                                    VerticalOptions="Center" />
                             
                             <Label Grid.Row="1" Grid.Column="2"
-                                   x:Name="ID"
-                                   Text="ID"
+                                   Text="{Binding Id}"
                                    FontSize="Medium"
                                    Padding="5"
                                    TextColor="Black"
@@ -119,8 +118,7 @@
                                      HeightRequest="100" />
 
                             <Label Grid.Row="2" Grid.Column="1"
-                                   x:Name="Height"
-                                   Text="Height"
+                                   Text="{Binding Height}"
                                    FontSize="Medium"
                                    Padding="5"
                                    TextColor="Black"
@@ -128,8 +126,7 @@
                                    VerticalOptions="Center" />
                             
                             <Label Grid.Row="2" Grid.Column="2"
-                                   x:Name="Weight"
-                                   Text="Weight"
+                                   Text="{Binding Weight}"
                                    FontSize="Medium"
                                    Padding="5"
                                    TextColor="Black"
@@ -195,6 +192,7 @@
                 HeightRequest="40"
                 WidthRequest="40"
                 CornerRadius="3"
+                Clicked="Left"
                 BackgroundColor="#555555"
                 Text="←"
                 FontSize="Small"
@@ -215,6 +213,7 @@
                 HeightRequest="40"
                 WidthRequest="40"
                 CornerRadius="3"
+                Clicked="Right"
                 BackgroundColor="#555555"
                 Text="→" 
                 FontSize="Small"
