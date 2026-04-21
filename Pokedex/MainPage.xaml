@@ -82,29 +82,35 @@
                                    VerticalOptions="Start" />
 
                             <!-- Row with 3 labels above the polygon -->
-                            <Label Grid.Row="1" Grid.Column="0"
+                            <Border Stroke="Blue" Grid.Row="1" Grid.Column="0">
+                                
+                                <Label
                                    Text="{Binding Name}"
                                    FontSize="Medium"
                                    Padding="5"
                                    TextColor="Black"
                                    HorizontalOptions="Center"
-                                   VerticalOptions="Center" />
-                            
-                            <Label Grid.Row="1" Grid.Column="1"
+                                   VerticalOptions="Center" 
+                                   TextDecorations="Underline"/>
+                                </Border>
+                            <Border Stroke="Red" Grid.Row="1" Grid.Column="1">
+                            <Label 
                                    Text="{Binding Types}"
                                    FontSize="Medium"
                                    Padding="5"
                                    TextColor="Black"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center" />
-                            
-                            <Label Grid.Row="1" Grid.Column="2"
+                               </Border>
+                            <Border Stroke="Green" Grid.Row="1" Grid.Column="2">
+                            <Label 
                                    Text="{Binding Id}"
                                    FontSize="Medium"
                                    Padding="5"
                                    TextColor="Black"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center" />
+                            </Border>
 
                             <!-- Bottom row: Polygon (left) and 2 labels (right) -->
                             <Polygon Grid.Row="2" Grid.Column="0"
@@ -116,22 +122,24 @@
                                      VerticalOptions="End"
                                      WidthRequest="100"
                                      HeightRequest="100" />
-
-                            <Label Grid.Row="2" Grid.Column="1"
+                            <Border Stroke="Yellow" Grid.Row="2" Grid.Column="1">
+                            <Label 
                                    Text="{Binding Height}"
                                    FontSize="Medium"
                                    Padding="5"
                                    TextColor="Black"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center" />
-                            
-                            <Label Grid.Row="2" Grid.Column="2"
+                            </Border>
+                            <Border Stroke="Black" Grid.Row="2" Grid.Column="2">
+                            <Label 
                                    Text="{Binding Weight}"
                                    FontSize="Medium"
                                    Padding="5"
                                    TextColor="Black"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center" />
+                            </Border>
 
                         </Grid>
                     </Border>
@@ -165,7 +173,8 @@
             <!-- Entry (Center) -->
             <Entry Grid.Column="1"
              x:Name="InputEntry"
-             Placeholder="Type ID/Name and press Enter"
+             Placeholder="Type ID/Name"
+             HorizontalTextAlignment="Center"
              Completed="OnSubmitClicked"
              HorizontalOptions="Fill"
              VerticalOptions="Center"
@@ -192,7 +201,6 @@
                 HeightRequest="40"
                 WidthRequest="40"
                 CornerRadius="3"
-                Clicked="Left"
                 BackgroundColor="#555555"
                 Text="←"
                 FontSize="Small"
@@ -213,7 +221,6 @@
                 HeightRequest="40"
                 WidthRequest="40"
                 CornerRadius="3"
-                Clicked="Right"
                 BackgroundColor="#555555"
                 Text="→" 
                 FontSize="Small"

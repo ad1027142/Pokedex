@@ -1,11 +1,13 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
+using Microsoft.Maui.Controls;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using System.Net.Http;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Pokedex
 {
@@ -75,7 +77,15 @@ namespace Pokedex
                     Types = Types,
                     ImageUrl = imageUrl
                 };
-
+                Pokemon formatted = new Pokemon
+                                    {
+                    Name = Name,
+                    Id = Id,
+                    Height = Height,
+                    Weight = Weight,
+                    Types = Types,
+                    ImageUrl = imageUrl
+                };
                 return pokemon;
             }
             catch (HttpRequestException)
