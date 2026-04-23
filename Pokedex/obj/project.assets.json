@@ -442,6 +442,22 @@
           }
         }
       },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Xamarin.Android.Glide/4.16.0.12": {
         "type": "package",
         "dependencies": {
@@ -2745,6 +2761,22 @@
         },
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
             "related": ".xml"
           }
         }
@@ -5056,6 +5088,22 @@
           }
         }
       },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Xamarin.Android.Glide/4.16.0.12": {
         "type": "package",
         "dependencies": {
@@ -7359,6 +7407,22 @@
         },
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
             "related": ".xml"
           }
         }
@@ -9670,6 +9734,22 @@
           }
         }
       },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Xamarin.Android.Glide/4.16.0.12": {
         "type": "package",
         "dependencies": {
@@ -11977,6 +12057,22 @@
           }
         }
       },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Xamarin.Android.Glide/4.16.0.12": {
         "type": "package",
         "dependencies": {
@@ -14256,6 +14352,18 @@
             "related": ".xml"
           }
         }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
+        }
       }
     },
     "net9.0-ios26.0/android-arm64": {
@@ -14670,6 +14778,18 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
         }
       }
     },
@@ -15086,6 +15206,18 @@
             "related": ".xml"
           }
         }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
+        }
       }
     },
     "net9.0-ios26.0/iossimulator-x64": {
@@ -15500,6 +15632,18 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
         }
       }
     },
@@ -15916,6 +16060,18 @@
             "related": ".xml"
           }
         }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
+        }
       }
     },
     "net9.0-ios26.0/win10-x64": {
@@ -16330,6 +16486,18 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
         }
       }
     },
@@ -16746,6 +16914,18 @@
             "related": ".xml"
           }
         }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
+        }
       }
     },
     "net9.0-maccatalyst26.0/android-arm64": {
@@ -17160,6 +17340,18 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
         }
       }
     },
@@ -17576,6 +17768,18 @@
             "related": ".xml"
           }
         }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
+        }
       }
     },
     "net9.0-maccatalyst26.0/iossimulator-x64": {
@@ -17990,6 +18194,18 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
         }
       }
     },
@@ -18406,6 +18622,18 @@
             "related": ".xml"
           }
         }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
+        }
       }
     },
     "net9.0-maccatalyst26.0/win10-x64": {
@@ -18820,6 +19048,18 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
         }
       }
     },
@@ -19486,6 +19726,18 @@
             "related": ".xml"
           }
         }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        }
       }
     },
     "net9.0-windows10.0.19041/android-arm64": {
@@ -20088,6 +20340,18 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       }
     },
@@ -20692,6 +20956,18 @@
             "related": ".xml"
           }
         }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        }
       }
     },
     "net9.0-windows10.0.19041/iossimulator-x64": {
@@ -21295,6 +21571,18 @@
             "related": ".xml"
           }
         }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        }
       }
     },
     "net9.0-windows10.0.19041/maccatalyst-x64": {
@@ -21897,6 +22185,18 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       }
     },
@@ -22510,6 +22810,18 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       }
     }
@@ -24597,6 +24909,25 @@
         "packageIcon.png"
       ]
     },
+    "Plugin.Maui.Audio/4.0.0": {
+      "sha512": "axet2WKKft9UAGTtCbflkMeWNmZHQJixIJxIbRzhRqoFifr5nFcZV0PWV/E0NPBUjkydBWVlRqXA1hQWMeY/0A==",
+      "type": "package",
+      "path": "plugin.maui.audio/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net9.0-android35.0/Plugin.Maui.Audio.dll",
+        "lib/net9.0-android35.0/Plugin.Maui.Audio.xml",
+        "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll",
+        "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll",
+        "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll",
+        "lib/net9.0/Plugin.Maui.Audio.dll",
+        "plugin.maui.audio.4.0.0.nupkg.sha512",
+        "plugin.maui.audio.nuspec"
+      ]
+    },
     "Xamarin.Android.Glide/4.16.0.12": {
       "sha512": "ReaxF/UeWqIMdg3NhfrVwugKy8UO++HUH6qCtECWwbyOAXtkgI1HEFg0uPf9mQMyKTHgF7dAQP1rAryvc54VyA==",
       "type": "package",
@@ -26459,24 +26790,28 @@
       "Microsoft.Extensions.Logging.Debug >= 9.0.8",
       "Microsoft.Maui.Controls >= 9.0.111",
       "Microsoft.NET.ILLink.Tasks >= 9.0.14",
-      "Newtonsoft.Json >= 13.0.4"
+      "Newtonsoft.Json >= 13.0.4",
+      "Plugin.Maui.Audio >= 4.0.0"
     ],
     "net9.0-ios26.0": [
       "Microsoft.Extensions.Logging.Debug >= 9.0.8",
       "Microsoft.Maui.Controls >= 9.0.111",
       "Microsoft.NET.ILLink.Tasks >= 9.0.14",
-      "Newtonsoft.Json >= 13.0.4"
+      "Newtonsoft.Json >= 13.0.4",
+      "Plugin.Maui.Audio >= 4.0.0"
     ],
     "net9.0-maccatalyst26.0": [
       "Microsoft.Extensions.Logging.Debug >= 9.0.8",
       "Microsoft.Maui.Controls >= 9.0.111",
       "Microsoft.NET.ILLink.Tasks >= 9.0.14",
-      "Newtonsoft.Json >= 13.0.4"
+      "Newtonsoft.Json >= 13.0.4",
+      "Plugin.Maui.Audio >= 4.0.0"
     ],
     "net9.0-windows10.0.19041": [
       "Microsoft.Extensions.Logging.Debug >= 9.0.8",
       "Microsoft.Maui.Controls >= 9.0.111",
-      "Newtonsoft.Json >= 13.0.4"
+      "Newtonsoft.Json >= 13.0.4",
+      "Plugin.Maui.Audio >= 4.0.0"
     ]
   },
   "packageFolders": {
@@ -26563,6 +26898,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.4, )"
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[4.0.0, )"
           }
         },
         "imports": [
@@ -26606,6 +26945,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.4, )"
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[4.0.0, )"
           }
         },
         "imports": [
@@ -26649,6 +26992,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.4, )"
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[4.0.0, )"
           }
         },
         "imports": [
@@ -26687,6 +27034,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.4, )"
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[4.0.0, )"
           }
         },
         "imports": [

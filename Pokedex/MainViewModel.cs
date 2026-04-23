@@ -2,6 +2,7 @@ using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using Plugin.Maui.Audio;
 
 namespace Pokedex
 {
@@ -61,6 +62,44 @@ namespace Pokedex
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        private async Task PlayRandomAudioAsync(int pokemonId)
+        {
+            try
+            {
+                Random random = new Random();
+                int chance = random.Next(1, 101); // 1-100
+
+                // If Pikachu (id 25) and within 1% chance, play Pikachu sound
+                if (!(pokemonId == 25) && chance == 1)
+                {
+                    await PlayAudioAsync("pikachu.mp3");
+                }
+                else
+                {
+                    // Otherwise, play "Who's that Pokemon"
+                    await PlayAudioAsync("whosthatpokemon.wav");
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Audio playback error: {ex.Message}");
+            }
+        }
+
+        private async Task PlayAudioAsync(string fileName)
+        {
+            try
+            {
+                var audioManager = AudioManager.Current;
+                var audioPlayer = audioManager.CreatePlayer(await FileSystem.OpenAppPackageFileAsync($"{fileName}"));
+                audioPlayer.Play();
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Failed to play {fileName}: {ex.Message}");
+            }
+        }
+
         public async Task LoadPokemonAsync(string input)
         {
             if (string.IsNullOrWhiteSpace(input))
@@ -77,6 +116,8 @@ namespace Pokedex
             Weight = p.Weight.ToString();
             Types = p.Types;
             ImageUrl = p.ImageUrl;
+
+            await PlayRandomAudioAsync(p.Id);
         }
 
         public async Task NextPokemonAsync()
@@ -92,6 +133,8 @@ namespace Pokedex
             Weight = p.Weight.ToString();
             Types = p.Types;
             ImageUrl = p.ImageUrl;
+
+            await PlayRandomAudioAsync(p.Id);
         }
 
         public async Task PreviousPokemonAsync()
@@ -107,6 +150,8 @@ namespace Pokedex
             Weight = p.Weight.ToString();
             Types = p.Types;
             ImageUrl = p.ImageUrl;
+
+            await PlayRandomAudioAsync(p.Id);
         }
     }
 }
