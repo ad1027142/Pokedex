@@ -77,15 +77,6 @@ namespace Pokedex
                     Types = Types,
                     ImageUrl = imageUrl
                 };
-                Pokemon formatted = new Pokemon
-                                    {
-                    Name = Name,
-                    Id = Id,
-                    Height = Height,
-                    Weight = Weight,
-                    Types = Types,
-                    ImageUrl = imageUrl
-                };
                 return pokemon;
             }
             catch (HttpRequestException)
@@ -147,6 +138,39 @@ namespace Pokedex
             }
 
             return char.ToUpper(raw[0]) + raw.Substring(1).ToLower();
+        }
+
+        public static async Task<Pokemon?> GetPokemonById(int id)
+        {
+            if (id <= 0)
+                return null;
+
+            return await PokeAPI(id.ToString());
+        }
+
+        public static async Task<Pokemon?> GetNextPokemon(int currentId)
+        {
+            if (currentId == 1025)
+            {
+                return await GetPokemonById(10001);
+            }
+            else
+            {
+                return await GetPokemonById(currentId + 1);
+            }
+        }
+
+        public static async Task<Pokemon?> GetPreviousPokemon(int currentId)
+        {
+            if (currentId <= 1)
+            {
+                return null;
+            }
+            else if (currentId == 10001)
+            {
+                return await GetPokemonById(1025);
+            }
+                return await GetPokemonById(currentId - 1);
         }
     }
 }

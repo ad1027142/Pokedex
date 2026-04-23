@@ -69,41 +69,67 @@
                 <!-- Rectangle and Content with Labels -->
                 <Grid Grid.Row="1" HorizontalOptions="Fill" VerticalOptions="Fill">
                     <Border StrokeShape="RoundRectangle 5" Stroke="#cc0000" Background="LightGray">
-                        <Grid RowDefinitions="*,Auto,Auto" ColumnDefinitions="*,*,*">
+                        <Grid RowDefinitions="*,Auto,Auto,Auto,Auto" ColumnDefinitions="*,*,*">
                             
                             <!-- Image at the top (bound to ViewModel ImageUrl) -->
                             <Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
                                    x:Name="PokemonImage"
                                    Source="{Binding ImageUrl}"
                                    Aspect="AspectFit"
-                                   HeightRequest="140"
                                    Margin="10"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Start" />
 
-                            <!-- Row with 3 labels above the polygon -->
-                            <Border Stroke="Blue" Grid.Row="1" Grid.Column="0">
-                                
+                            <!-- Row 1: Headers for data -->
+                            <Label Grid.Row="1" Grid.Column="0"
+                                   Text="Name"
+                                   FontSize="Small"
+                                   FontAttributes="Bold"
+                                   Padding="5,5,5,0"
+                                   TextColor="Black"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Start" />
+                            <Label Grid.Row="1" Grid.Column="1"
+                                   Text="Type"
+                                   FontSize="Small"
+                                   FontAttributes="Bold"
+                                   Padding="5,5,5,0"
+                                   TextColor="Black"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Start" />
+                            <Label Grid.Row="1" Grid.Column="2"
+                                   Text="ID"
+                                   FontSize="Small"
+                                   FontAttributes="Bold"
+                                   Padding="5,5,5,0"
+                                   TextColor="Black"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Start" />
+
+                            <!-- Row 2: Data labels with borders -->
+                            <Border Stroke="Blue" Grid.Row="2" Grid.Column="0" Padding="5">
                                 <Label
                                    Text="{Binding Name}"
                                    FontSize="Medium"
                                    Padding="5"
                                    TextColor="Black"
-                                   HorizontalOptions="Center"
-                                   VerticalOptions="Center" 
-                                   TextDecorations="Underline"/>
-                                </Border>
-                            <Border Stroke="Red" Grid.Row="1" Grid.Column="1">
-                            <Label 
+                                   MinimumHeightRequest="90"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"/>
+                            </Border>
+                            <Border Stroke="Red" Grid.Row="2" Grid.Column="1">
+                                <Label 
                                    Text="{Binding Types}"
                                    FontSize="Medium"
                                    Padding="5"
                                    TextColor="Black"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center" />
-                               </Border>
-                            <Border Stroke="Green" Grid.Row="1" Grid.Column="2">
-                            <Label 
+                            </Border>
+                            <Border Stroke="Green" Grid.Row="2" Grid.Column="2">
+                                <Label 
                                    Text="{Binding Id}"
                                    FontSize="Medium"
                                    Padding="5"
@@ -112,8 +138,26 @@
                                    VerticalOptions="Center" />
                             </Border>
 
-                            <!-- Bottom row: Polygon (left) and 2 labels (right) -->
-                            <Polygon Grid.Row="2" Grid.Column="0"
+                            <!-- Row 3: Headers for bottom row -->
+                            <Label Grid.Row="3" Grid.Column="1"
+                                   Text="Height"
+                                   FontSize="Small"
+                                   FontAttributes="Bold"
+                                   Padding="5,5,5,0"
+                                   TextColor="Black"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Start" />
+                            <Label Grid.Row="3" Grid.Column="2"
+                                   Text="Weight"
+                                   FontSize="Small"
+                                   FontAttributes="Bold"
+                                   Padding="5,5,5,0"
+                                   TextColor="Black"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Start" />
+
+                            <!-- Row 4: Bottom row with Polygon and 2 labels -->
+                            <Polygon Grid.Row="4" Grid.Column="0"
                                      Points="0,100 0,0 100,100"
                                      Stroke="#cc0000"
                                      Fill="#cc0000"
@@ -122,17 +166,19 @@
                                      VerticalOptions="End"
                                      WidthRequest="100"
                                      HeightRequest="100" />
-                            <Border Stroke="Yellow" Grid.Row="2" Grid.Column="1">
-                            <Label 
+                            <Border Stroke="Yellow" Grid.Row="4" Grid.Column="1">
+                                <Label 
                                    Text="{Binding Height}"
                                    FontSize="Medium"
                                    Padding="5"
+                                   MinimumHeightRequest="90"
                                    TextColor="Black"
                                    HorizontalOptions="Center"
+                                    VerticalTextAlignment="Center"
                                    VerticalOptions="Center" />
                             </Border>
-                            <Border Stroke="Black" Grid.Row="2" Grid.Column="2">
-                            <Label 
+                            <Border Stroke="Black" Grid.Row="4" Grid.Column="2">
+                                <Label 
                                    Text="{Binding Weight}"
                                    FontSize="Medium"
                                    Padding="5"
@@ -203,6 +249,7 @@
                 CornerRadius="3"
                 BackgroundColor="#555555"
                 Text="←"
+                Clicked="Left"
                 FontSize="Small"
                 x:Name="left"/>
 
@@ -223,6 +270,7 @@
                 CornerRadius="3"
                 BackgroundColor="#555555"
                 Text="→" 
+                Clicked="Right"
                 FontSize="Small"
                 x:Name="rightg"/>
 

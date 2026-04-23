@@ -13,6 +13,7 @@ namespace Pokedex
         string weight = "Weight";
         string types = "Type";
         string imageUrl = string.Empty;
+        int currentId = 0;
 
         public string Name
         {
@@ -69,6 +70,37 @@ namespace Pokedex
             if (p is null)
                 return;
 
+            currentId = p.Id;
+            Name = p.Name;
+            Id = p.Id.ToString();
+            Height = p.Height.ToString();
+            Weight = p.Weight.ToString();
+            Types = p.Types;
+            ImageUrl = p.ImageUrl;
+        }
+
+        public async Task NextPokemonAsync()
+        {
+            var p = await API.GetNextPokemon(currentId);
+            if (p is null)
+                return;
+
+            currentId = p.Id;
+            Name = p.Name;
+            Id = p.Id.ToString();
+            Height = p.Height.ToString();
+            Weight = p.Weight.ToString();
+            Types = p.Types;
+            ImageUrl = p.ImageUrl;
+        }
+
+        public async Task PreviousPokemonAsync()
+        {
+            var p = await API.GetPreviousPokemon(currentId);
+            if (p is null)
+                return;
+
+            currentId = p.Id;
             Name = p.Name;
             Id = p.Id.ToString();
             Height = p.Height.ToString();
