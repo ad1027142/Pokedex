@@ -78,7 +78,9 @@
                                    Aspect="AspectFit"
                                    Margin="10"
                                    HorizontalOptions="Center"
-                                   VerticalOptions="Start" />
+                                   VerticalOptions="Center"
+                                   MinimumHeightRequest="140"
+                                   MinimumWidthRequest="140" />
 
                             <!-- Row 1: Headers for data -->
                             <Label Grid.Row="1" Grid.Column="0"
@@ -183,6 +185,7 @@
                                    FontSize="Medium"
                                    Padding="5"
                                    TextColor="Black"
+                                    VerticalTextAlignment="Center"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center" />
                             </Border>

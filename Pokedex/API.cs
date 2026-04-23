@@ -62,12 +62,43 @@ namespace Pokedex
                     }
                 }
 
-                // Prefer constructing the sprite URL from the Pokemon ID (guaranteed stable).
-                // Fallback to the API-provided front_default if ID is not available.
+                // API-provided sprite (may be null/empty)
                 string apiSprite = j["sprites"]?["front_default"]?.ToString() ?? string.Empty;
-                string imageUrl = Id > 0
-                    ? $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{Id}.png"
-                    : apiSprite;
+
+                // Prefer constructing the sprite URL from the Pokemon ID (guaranteed stable),
+                // but verify it exists. Fallback to apiSprite or local placeholder if not.
+                string imageUrl = string.Empty;
+                if (Id > 0)
+                {
+                    string constructed = $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{Id}.png";
+                    try
+                    {
+                        // Use HEAD to check existence without downloading the image
+                        var headReq = new HttpRequestMessage(HttpMethod.Head, constructed);
+                        using var headResp = await client.SendAsync(headReq);
+                        if (headResp.IsSuccessStatusCode)
+                        {
+                            imageUrl = constructed;
+                        }
+                        else if (!string.IsNullOrEmpty(apiSprite))
+                        {
+                            imageUrl = apiSprite;
+                        }
+                        else
+                        {
+                            // local fallback — add a placeholder image to Resources/Images named placeholder.png
+                            imageUrl = "placeholder.png";
+                        }
+                    }
+                    catch
+                    {
+                        imageUrl = !string.IsNullOrEmpty(apiSprite) ? apiSprite : "placeholder.png";
+                    }
+                }
+                else
+                {
+                    imageUrl = !string.IsNullOrEmpty(apiSprite) ? apiSprite : "placeholder.png";
+                }
 
                 Pokemon pokemon = new Pokemon
                 {
@@ -154,6 +185,9 @@ namespace Pokedex
             if (currentId == 1025)
             {
                 return await GetPokemonById(10001);
+            }else if(currentId == 10325)
+            {
+                return await GetPokemonById(1);
             }
             else
             {
@@ -163,15 +197,21 @@ namespace Pokedex
 
         public static async Task<Pokemon?> GetPreviousPokemon(int currentId)
         {
-            if (currentId <= 1)
+            if (currentId <= 0)
             {
                 return null;
             }
             else if (currentId == 10001)
             {
                 return await GetPokemonById(1025);
+            } else if (currentId == 1)
+            {
+                return await GetPokemonById(10325);
             }
+            else
+            {
                 return await GetPokemonById(currentId - 1);
+            }
         }
     }
 }

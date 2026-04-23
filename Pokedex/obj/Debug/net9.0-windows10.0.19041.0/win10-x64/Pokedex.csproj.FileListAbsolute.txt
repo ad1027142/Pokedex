@@ -2063,3 +2063,6 @@ C:\Users\ad1027142\source\repos\ad1027142\Pokedex\Pokedex\obj\Debug\net9.0-windo
 C:\Users\ad1027142\source\repos\ad1027142\Pokedex\Pokedex\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\ad1027142\source\repos\ad1027142\Pokedex\Pokedex\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\ad1027142\source\repos\ad1027142\Pokedex\Pokedex\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
+C:\Users\ad1027142\source\repos\ad1027142\Pokedex\Pokedex\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\pikachu.mp3
+C:\Users\ad1027142\source\repos\ad1027142\Pokedex\Pokedex\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\whosthatpokemon.wav
+C:\Users\ad1027142\source\repos\ad1027142\Pokedex\Pokedex\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Plugin.Maui.Audio.dll
