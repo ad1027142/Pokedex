@@ -1370,3 +1370,5 @@ C:\Users\ad1027142\source\repos\ad1027142\Pokedex\Pokedex\obj\Debug\net9.0-andro
 C:\Users\ad1027142\source\repos\ad1027142\Pokedex\Pokedex\obj\Debug\net9.0-android\android\marshal_methods.arm64-v8a.o
 C:\Users\ad1027142\source\repos\ad1027142\Pokedex\Pokedex\obj\Debug\net9.0-android\android\jni_remap.arm64-v8a.o
 C:\Users\ad1027142\source\repos\ad1027142\Pokedex\Pokedex\obj\Debug\net9.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
+C:\Users\ad1027142\source\repos\ad1027142\Pokedex\Pokedex\obj\Debug\net9.0-android\assets\pikachu.mp3
+C:\Users\ad1027142\source\repos\ad1027142\Pokedex\Pokedex\obj\Debug\net9.0-android\assets\whosthatpokemon.wav
