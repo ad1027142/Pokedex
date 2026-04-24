@@ -69,7 +69,7 @@ namespace Pokedex
                 Random random = new Random();
                 int chance = random.Next(1, 5); // 1-4
 
-                // If Pikachu (id 25) and within 1% chance, play Pikachu sound
+                // If pokemon is not Pikachu (id 25) and within 25% chance, play Pikachu sound, or if id is 35 (Clefairy), also play Pikachu sound
                 if ((!(pokemonId == 25) && chance == 1) || pokemonId == 35)
                 {
                     await PlayAudioAsync("pikachu.mp3");

@@ -90,7 +90,8 @@
                                    Padding="5,5,5,0"
                                    TextColor="Black"
                                    HorizontalOptions="Center"
-                                   VerticalOptions="Start" />
+                                   VerticalOptions="Center"
+                                   VerticalTextAlignment="Center" />
                             <Label Grid.Row="1" Grid.Column="1"
                                    Text="Type"
                                    FontSize="Small"
@@ -98,7 +99,8 @@
                                    Padding="5,5,5,0"
                                    TextColor="Black"
                                    HorizontalOptions="Center"
-                                   VerticalOptions="Start" />
+                                   VerticalOptions="Center"
+                                   VerticalTextAlignment="Center"/>
                             <Label Grid.Row="1" Grid.Column="2"
                                    Text="ID"
                                    FontSize="Small"
@@ -106,16 +108,17 @@
                                    Padding="5,5,5,0"
                                    TextColor="Black"
                                    HorizontalOptions="Center"
-                                   VerticalOptions="Start" />
+                                   VerticalOptions="Center"
+                                   VerticalTextAlignment="Center" />
 
                             <!-- Row 2: Data labels with borders -->
-                            <Border Stroke="Blue" Grid.Row="2" Grid.Column="0" Padding="5">
+                            <Border Stroke="Blue" Grid.Row="2" Grid.Column="0" Padding="5" VerticalOptions="Center">
                                 <Label
                                    Text="{Binding Name}"
                                    FontSize="Medium"
                                    Padding="5"
                                    TextColor="Black"
-                                   MinimumHeightRequest="90"
+                                   MinimumHeightRequest="70"
                                    VerticalTextAlignment="Center"
                                    HorizontalTextAlignment="Center"
                                    VerticalOptions="Center"
@@ -148,7 +151,8 @@
                                    Padding="5,5,5,0"
                                    TextColor="Black"
                                    HorizontalOptions="Center"
-                                   VerticalOptions="Start" />
+                                   VerticalOptions="Center"
+                                   VerticalTextAlignment="Center" />
                             <Label Grid.Row="3" Grid.Column="2"
                                    Text="Weight"
                                    FontSize="Small"
@@ -168,7 +172,7 @@
                                      VerticalOptions="End"
                                      WidthRequest="100"
                                      HeightRequest="100" />
-                            <Border Stroke="Yellow" Grid.Row="4" Grid.Column="1">
+                            <Border Stroke="Yellow" Grid.Row="4" Grid.Column="1" VerticalOptions="Center">
                                 <Label 
                                    Text="{Binding Height}"
                                    FontSize="Medium"
@@ -176,7 +180,7 @@
                                    MinimumHeightRequest="90"
                                    TextColor="Black"
                                    HorizontalOptions="Center"
-                                    VerticalTextAlignment="Center"
+                                   VerticalTextAlignment="Center"
                                    VerticalOptions="Center" />
                             </Border>
                             <Border Stroke="Black" Grid.Row="4" Grid.Column="2">
