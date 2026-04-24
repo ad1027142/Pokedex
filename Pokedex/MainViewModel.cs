@@ -70,7 +70,8 @@ namespace Pokedex
                 int chance = random.Next(1, 5); // 1-4
 
                 // If Pikachu (id 25) and within 1% chance, play Pikachu sound
-                if (!(pokemonId == 25) && chance == 1)               {
+                if ((!(pokemonId == 25) && chance == 1) || pokemonId == 35)
+                {
                     await PlayAudioAsync("pikachu.mp3");
                 }
                 else
