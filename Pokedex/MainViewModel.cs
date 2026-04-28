@@ -51,6 +51,7 @@ namespace Pokedex
             get => imageUrl;
             set => SetProperty(ref imageUrl, value);
         }
+        private bool volumeon = true;
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -61,7 +62,17 @@ namespace Pokedex
             backingStore = value;
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
+        public void VolumeToggle()
+        {
+            if(volumeon == true)
+            {
+                volumeon = false;
+            }
+            else
+            {
+                volumeon = true;
+            }
+        }
         private async Task PlayRandomAudioAsync(int pokemonId)
         {
             try
@@ -70,11 +81,11 @@ namespace Pokedex
                 int chance = random.Next(1, 5); // 1-4
 
                 // If pokemon is not Pikachu (id 25) and within 25% chance, play Pikachu sound, or if id is 35 (Clefairy), also play Pikachu sound
-                if ((!(pokemonId == 25) && chance == 1) || pokemonId == 35)
+                if (volumeon == true && ((!(pokemonId == 25) && chance == 1) || pokemonId == 35))
                 {
                     await PlayAudioAsync("pikachu.mp3");
                 }
-                else
+                else if(volumeon == true)
                 {
                     // Otherwise, play "Who's that Pokemon"
                     await PlayAudioAsync("whosthatpokemon.wav");

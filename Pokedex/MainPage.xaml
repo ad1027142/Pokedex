@@ -31,10 +31,13 @@
               Padding="10">
 
                     <!-- Big Ellipse -->
-                    <Ellipse Grid.Column="0"
-                   Fill="CornflowerBlue"
-                   Stroke="white"
-                   StrokeThickness="5"
+                    <Button Grid.Column="0"
+                   BackgroundColor="CornflowerBlue"
+                   BorderColor="white"
+                   x:Name="vtoggle"
+                   BorderWidth="2"
+                   Clicked="Volume"
+                   CornerRadius="40"
                    WidthRequest="80"
                    HeightRequest="80" />
 

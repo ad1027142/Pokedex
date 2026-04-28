@@ -13,7 +13,10 @@ public partial class MainPage : ContentPage
         InitializeComponent();
         BindingContext = viewModel;
     }
-
+    public void Volume(object sender, EventArgs e)
+    {
+        viewModel.VolumeToggle();
+    }
     async void OnSubmitClicked(object sender, EventArgs e)
     {
         var text = InputEntry?.Text ?? string.Empty;
