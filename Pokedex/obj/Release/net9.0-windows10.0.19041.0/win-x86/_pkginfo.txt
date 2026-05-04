@@ -1,0 +1,1 @@
+C:\Users\ad1027142\source\repos\ad1027142\Pokedex\Pokedex\bin\Release\net9.0-windows10.0.19041.0\win10-x64\AppPackages\Pokedex_1.0.0.0_Test\Pokedex_1.0.0.0_x86.msix
